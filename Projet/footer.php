@@ -18,9 +18,9 @@
 			</div>
 				<div class="footer-social">
 				<h3>Suivez-nous </h3>
-				<a href="#">	<i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				<a href="https://www.facebook.com/Actvty-777973622355032/">	<i class="fa fa-facebook"></i></a>
+				<a href="https://twitter.com/AcTVty_info"><i class="fa fa-twitter"></i></a>
+				<a href="https://plus.google.com/collection/sAPVQE"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
 			</div>
 			<div class="footer-info">
 				<h3>A propos</h3>

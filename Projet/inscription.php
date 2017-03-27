@@ -15,7 +15,7 @@
 		<div class="main-content">
 			<div class="inscription">
 			<h1>Inscrivez-vous ! <h1>
-				<form method="post" action="traitement.php">
+				<form method="post" action="inscrit.php">
 				      <input type="text" name="nom" placeholder="Votre nom" maxlength="30"/><br/>
 				      <input type="text" name="prenom" placeholder="Votre prénom" maxlength="30"/><br/>
 				      <input type="text" name="pseudo" placeholder="Votre pseudo" maxlength="30"/><br/>
@@ -24,7 +24,27 @@
 				     <label>Votre sexe :</label> <input type="radio" name="genre" value="male" checked> Homme
   					  <input type="radio" name="genre" value="female"> Femme<br/>
   					   <label>Votre date de naissance :</label>
-  					    <input type="date" name="naissance" placeholder="jour/mois/année"><br/>
+  					   <select>
+  					    <?php 
+  					    for($jour = 1;$jour<32;$jour++)
+  					    {
+  					    ?>
+  					    <option><?php echo $jour; ?></option>
+  					    <?php } ?>
+  					    </select>
+  					    <select>
+  					    	<option>Janvier</option><option>Février</option><option>Mars</option><option>Avril</option>
+  					    	<option>Mai</option><option>Juin</option><option>Juillet</option><option>Août</option>
+  					    	<option>Septembre</option><option>Octobre</option><option>Novembre</option><option>Décembre</option>
+  					    </select>
+  					     <select>
+  					    <?php 
+  					    for($annee = 2000;$annee>1950;$annee--)
+  					    {
+  					    ?>
+  					    <option><?php echo $annee; ?></option>
+  					    <?php } ?>
+  					    </select><br/>
   					    <input type="submit" value="Valider">
 				</form>
 			</div>

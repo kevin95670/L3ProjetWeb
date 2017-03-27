@@ -12,8 +12,8 @@
 	<body>
 
 		<aside>
-			<nav class="categories">
-				<h2>Les catégories :</h2>
+			<h2>Les catégories :</h2>
+				<nav class="categories">
 				<ul>
 					<li>
 						<a href="series.php">Les mieux notés</a>

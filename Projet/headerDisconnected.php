@@ -13,7 +13,7 @@
 
 		<header>
 			<div class="logo">
-			<h1>Ac<i class="fa fa-television" aria-hidden="true"></i>ty</h1>
+			<h1><a href="home.php">Ac<i class="fa fa-television" aria-hidden="true"></i>ty</a></h1>
 		</div>
 			<div class="search">
 			<form type="text">
