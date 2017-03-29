@@ -15,7 +15,7 @@
 
 		<?php require("headerDisconnected.php"); ?>
 		<div class="main-content">
-			<div class="inscription">
+			<div class="connexion">
 			<h1>Connectez-vous <h1>
 				<form method="post" action="traitement.php">
 				      <input type="text" name="pseudo" placeholder="Votre pseudo" maxlength="30"/><br/>

@@ -13,14 +13,13 @@
 
 		<header>
 			<div class="logo">
-			<h1>Ac<i class="fa fa-television" aria-hidden="true"></i>ty</h1>
+			<h1><a href="home.php">Ac<i class="fa fa-television" aria-hidden="true"></i>ty</a></h1>
 		</div>
 			<div class="search">
 				<form type="text">
 					<input type="text" name="rechercher" placeholder="Une série, un acteur..."></input>
-					<button type="submit" class="btn-rechercher">
-	    			<i class="fa fa-search"></i>
-					</button>
+					<input type="submit" class="search-button" value="&#xf002;">
+				</input>
 				</form>
 			</div>
 			<nav class="header-menu">

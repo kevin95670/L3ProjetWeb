@@ -73,12 +73,12 @@ border-color: #ec971d;
 
 .header-menu a{
 	text-decoration: none;
-	color: #b0b1b4;
+	color: white;
 	font-size: 15px;
 }
 
 .header-menu a:hover{
-	color: white;
+	color: #fecc00;
 	font-size: 16px;
 }
 
@@ -238,11 +238,11 @@ footer{
 }
 
 .footer-social i:hover{
-	color: white;
+	color: #fecc00;
 }
 
 .footer-social i{
-	color: #b0b1b4;
+	color: white;
 	font-size: 25px;
 	margin-top: 8px;
 }
@@ -266,13 +266,13 @@ footer{
 }
 
 .footer-info li a{
-	color: #b0b1b4;
+	color: white;
 	text-decoration: none;
 	font-size: 15px;
 }
 
 .footer-info li a:hover{
-	color: white;
+	color: #fecc00;
 	font-size: 16px;
 }
 
