@@ -6,6 +6,8 @@
 		<meta charset="utf-8" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<link rel="stylesheet" href="http://localhost/Projet/font-awesome-4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="../Projet/script.js"></script>
 		<title>AcTVty</title>
 	</head>
 
@@ -14,16 +16,16 @@
 		<?php require("headerDisconnected.php"); ?>
 		<div class="main-content">
 			<div class="inscription">
-			<h1>Inscrivez-vous ! <h1>
+			<h1>Inscrivez-vous !</h1>
 				<form method="post" action="inscrit.php">
-				      <input type="text" name="nom" placeholder="Votre nom" maxlength="30"/><br/>
-				      <input type="text" name="prenom" placeholder="Votre prénom" maxlength="30"/><br/>
-				      <input type="text" name="pseudo" placeholder="Votre pseudo" maxlength="30"/><br/>
-				      <input type="password" name="mdp" placeholder="Votre mot de passe" maxlength="40"/><br/>
-				      <input type="email" name="email" placeholder="Votre mail" maxlength="45"/><br/>
-				     <label>Votre sexe :</label> <input type="radio" name="genre" value="male" checked> Homme
-  					  <input type="radio" name="genre" value="female"> Femme<br/>
-  					   <label>Votre date de naissance :</label>
+				     <p><input type="text" name="nom" placeholder="Votre nom" maxlength="30"/></p>
+				      <p><input type="text" name="prenom" placeholder="Votre prénom" maxlength="30"/></p>
+				      <p><input type="text" name="pseudo" placeholder="Votre pseudo" maxlength="30"/></p>
+				     <p><input type="password" name="mdp" placeholder="Votre mot de passe" maxlength="40"/></p>
+				      <p><input type="email" name="email" placeholder="Votre mail" maxlength="45"/></p>
+				     <p><label>Votre sexe :</label> <input type="radio" name="genre" id="male" value="male" checked><label for="male"><i class="fa fa-male" aria-hidden="true"></i> Homme</label>
+  					  <input type="radio" name="genre" id="female" value="female"><label for="female"><i class="fa fa-male" aria-hidden="true"></i> Femme</label></p>
+  					   <p><label>Votre date de naissance :</label>
   					   <select>
   					    <?php 
   					    for($jour = 1;$jour<32;$jour++)
@@ -44,8 +46,8 @@
   					    ?>
   					    <option><?php echo $annee; ?></option>
   					    <?php } ?>
-  					    </select><br/>
-  					    <input type="submit" value="Valider">
+  					    </select></p>
+  					    <p><input type="submit" value="Créer mon compte"></p>
 				</form>
 			</div>
 		</div>
