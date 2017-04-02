@@ -159,6 +159,10 @@ header {
     color: black;
 }
 
+.pagination a:hover {
+    color: #fecc00;
+}
+
 
 /*End of series */
 
@@ -299,6 +303,32 @@ header {
 }
 
 /* End of forum */
+
+/* contact */
+
+.contact input[type="email"]{
+    width: 200px;
+}
+
+/* End of contact */
+
+/* Page who */
+
+.who img,
+.who p,
+.who h2{
+margin-left: 10px;
+}
+
+.who a{
+    color: black;
+}
+
+.who a:hover{
+    color: #fecc00;
+}
+
+/*End of who*/
 
 /* FOOTER */
 
