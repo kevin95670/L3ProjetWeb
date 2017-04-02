@@ -198,6 +198,12 @@ header {
     margin: 0 10px;
 }
 
+.img-serie img{
+    width: 300px;
+    height: 250px;
+    
+}
+
 .pagination {
     text-align: center;
 }
@@ -210,6 +216,86 @@ header {
     color: #fecc00;
 }
 
+.main-content2{
+    float: left;
+    width: 70%;
+    margin-left: 50px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #252525 ;
+}
+.nom-serie{
+    background-color: #fecc00;
+        margin-top: -21px; 
+    text-align: center;
+    height : 80%;
+}
+
+.entete-serie {
+    width : 100%;
+    display: inline-block;
+    background-color: #252525 ;
+    height : 350px;
+}
+.entete-image  {
+    position: relative;
+    display: inline-block;
+    width:26%;
+    margin-left :20px; 
+    top : -30px;
+    
+    }
+.entete-image img  {
+    
+    width:200px;
+    height:200px;
+
+}
+.entete-synopsis {
+    
+    display: inline-block;
+    position: relative;
+    width:40%;
+    height:100%;
+    color : white;
+    margin-top:30px;
+    
+}
+.entete-note{
+    color : white;
+    margin-left: 20px;
+    width:30%;
+    display: inline-block;
+    float : right;
+    position: relative;
+    top : -330px;
+    
+}   
+.entete-note h1{
+    color: #fecc00;
+    text-align: center;
+    font-size:50px;
+    
+}
+.entete-note strong{
+    color: #fecc00;
+}
+
+.entete-note a{
+    color : white;
+    text-decoration: none;
+}
+
+.BA-serie h1, .information-serie h1{
+    background-color: #fecc00;
+    margin: 0;
+    text-align: center;
+    height :100%;
+}
+.BA-serie video{
+    width: 100%;
+    margin-bottom: -10px;
+}
 
 /*End of series */
 
