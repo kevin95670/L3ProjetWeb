@@ -97,6 +97,38 @@ header {
 
 /* END of HEADER */
 
+/* Home */
+
+.diaporama{
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.diaporama img{
+    max-width: 100%;
+}
+
+.legend{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fecc00;
+    width: 30%;
+    padding: 20px 0;
+}
+
+.legend a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.legend a:hover {
+    color: white;
+}
+
+/* End of home */
 
 /* Main content of each page */
 
@@ -124,10 +156,25 @@ header {
 
 .categories li {
     list-style: none;
+    padding: 5px 0;
+}
+
+.categories li:hover {
+    background-color: #fecc00;
+}
+
+.sub-categories{
+    margin-left: 20px;
+}
+
+.categories ul{
+    padding: 0;
 }
 
 .categories a {
     text-decoration: none;
+    margin-left: 20px;
+    color: black;
 }
 
 
@@ -240,6 +287,14 @@ header {
 
 /* End of modification profil */
 
+/* Preferences */
+
+.preferences label{
+    font-weight: bold;
+}
+
+/* End of preferences */
+
 /* Forum */
 
 
@@ -317,7 +372,7 @@ header {
 .who img,
 .who p,
 .who h2{
-margin-left: 10px;
+    margin-left: 10px;
 }
 
 .who a{

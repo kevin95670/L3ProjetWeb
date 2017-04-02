@@ -13,6 +13,10 @@
 
             <div class="main-content">
                 <h1 class="bg-yellow">Bienvenue sur Ac<i class="fa fa-television" aria-hidden="true"></i>ty</h1>
+                <div class="diaporama">
+                	<img src="../../Projet/images/vampire.jpg" alt="diaporama"/>
+                	<div class="legend"><a href="#">Legende</a></div>
+                </div>
             </div>
 
             <?php require("right-side.php"); ?>

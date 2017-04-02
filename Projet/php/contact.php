@@ -19,7 +19,7 @@ else
 		$headers = "From:".$_POST['emailContact']. "\r\n";
 		$message=$_POST['comment'];
 
-		mail("kevin-leonard@orange.fr", "contact AcTVty", $message, $headers) ;
+		mail("kevin-leonard@orange.fr", "contact AcTVty", $message, $headers);
 
 	}
 	?>
