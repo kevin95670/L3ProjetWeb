@@ -1,0 +1,423 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    display: table;
+    width: 100%;
+    font-family: Courier, Helvetica, Arial, sans-serif;
+}
+
+.bg-yellow{
+    background-color: #fecc00;
+    margin-top: 0;
+    text-align: center;
+}
+
+/* HEADER */
+
+header {
+    background-color: #252525;
+}
+
+.logo {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.search {
+    display: inline-block;
+    margin-left: 200px;
+}
+
+.search form input[type=text] {
+    padding: 6px 20px;
+}
+
+.search-button {
+    padding: 6px 30px;
+    margin-left: -10px;
+    background-color: #fecc00;
+    border-color: #fecc00;
+    font-family: FontAwesome, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.search-button:hover {
+    background-color: #ec971d;
+    border-color: #ec971d;
+}
+
+.header-menu {
+    margin-left: 200px;
+}
+
+.header-menu ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.header-menu li:last-child {
+    margin-right: 0px;
+}
+
+.header-menu li {
+    display: inline-block;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+.header-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.938em;
+}
+
+.header-menu a:hover {
+    color: #fecc00;
+    font-size: 1.000em;
+}
+
+.birthday {
+    position: fixed;
+    top: 10px;
+    right: 50px;
+    background-color: #fecc00;
+    text-align: center;
+}
+
+
+/* END of HEADER */
+
+
+/* Main content of each page */
+
+.main-content {
+    float: left;
+    width: 60%;
+    margin-left: 50px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* End main content */
+
+
+/* Right side of site */
+
+.right-side {
+    float: right;
+    margin-right: 50px;
+    width: 20%;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.categories li {
+    list-style: none;
+}
+
+.categories a {
+    text-decoration: none;
+}
+
+
+/*  End of right side */
+
+
+/* Series */
+
+.series h3 {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.series .filter {
+    display: inline-block;
+}
+
+.each-serie {
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination a {
+    color: black;
+}
+
+.pagination a:hover {
+    color: #fecc00;
+}
+
+
+/*End of series */
+
+
+/* Common portions into connexion and inscription */
+
+.identification p {
+    margin-left: 40px;
+}
+
+.identification form input,
+.identification form select {
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #C0C0C0;
+}
+
+.identification form input {
+    padding-left: 5px;
+}
+
+.identification input[type=submit] {
+    background-color: #fecc00;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.identification input[type=submit]:hover {
+    background-color: #ec971d;
+}
+
+.identification input[type=submit],
+.identification input[type=radio],
+.identification form select {
+    cursor: pointer;
+}
+
+.identification input[type=text]:focus,
+.identification input[type=password]:focus,
+.identification input[type=email]:focus {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+
+/* End of common portions */
+
+
+/* Inscription */
+
+.inscription label {
+    font-weight: bold;
+}
+
+
+/* End of Inscription */
+
+
+/* Connexion */
+
+.connexion i {
+    margin-right: 10px;
+}
+
+
+/* End of connexion */
+
+/* Modification profil */
+
+.modification label{
+    font-weight: bold;
+}
+
+.avatar img{
+    margin-left: 40px;
+}
+
+/* End of modification profil */
+
+/* Forum */
+
+
+.header-list{
+    list-style: none;
+}
+
+.list-forum{
+    display: table;
+    width: 90%;
+    border: 1px solid gray;
+    margin-left: 25px;
+    padding: 0;
+
+}
+
+.list-forum li{
+    display: table-row;
+    line-height: 30px;
+}
+
+.header-list{
+    background-color: #fecc00;
+}
+
+.header-list span{
+    font-weight: bold;
+}
+
+.header-list span,
+.topic-list span{
+    padding-left: 10px;
+}
+
+.topic-list span a{
+    text-decoration: none;
+    color: black;
+}
+
+.topic-list a:hover{
+    color: #fecc00;
+}
+
+.subject{
+    display: table-cell;
+}
+
+.author{
+    width: 20%;
+    display: table-cell;
+}
+
+.messages{
+    width: 10%;
+    display: table-cell;
+}
+
+.name-serie{
+    width: 30%;
+    display: table-cell;
+}
+
+/* End of forum */
+
+/* contact */
+
+.contact input[type="email"]{
+    width: 200px;
+}
+
+/* End of contact */
+
+/* Page who */
+
+.who img,
+.who p,
+.who h2{
+margin-left: 10px;
+}
+
+.who a{
+    color: black;
+}
+
+.who a:hover{
+    color: #fecc00;
+}
+
+/*End of who*/
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    background-color: #252525;
+    display: table-row;
+    height: 100px;
+}
+
+.footer-site {
+    display: inline-block;
+    text-align: left;
+    width: 30%;
+}
+
+.footer-site p {
+    color: white;
+    font-size: 0.813em;
+    margin: 0px;
+}
+
+.footer-site h1 {
+    color: white;
+    margin: 6px;
+    margin-left: 0;
+}
+
+.footer-social {
+    display: inline-block;
+    border-right: 1px solid #6e6e6e;
+    border-left: 1px solid #6e6e6e;
+    width: 20%;
+    vertical-align: top;
+}
+
+.footer-social h3 {
+    color: white;
+    margin-top: 12px;
+}
+
+.footer-social a {
+    display: inline-block;
+    background-color: #343434;
+    border: 1px solid #343434;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.footer-social i:hover {
+    color: #fecc00;
+}
+
+.footer-social i {
+    color: white;
+    font-size: 1.563em;
+    margin-top: 8px;
+}
+
+.footer-info h3 {
+    color: white;
+    margin-top: 12px;
+}
+
+.footer-info {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+}
+
+.footer-info li {
+    color: white;
+    display: inline-block;
+    list-style: none;
+}
+
+.footer-info li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.938em;
+}
+
+.footer-info li a:hover {
+    color: #fecc00;
+    font-size: 1.000em;
+}
+
+
+/* END of FOOTER */
