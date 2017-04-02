@@ -12,6 +12,11 @@ body {
     font-family: Courier, Helvetica, Arial, sans-serif;
 }
 
+.bg-yellow{
+    background-color: #fecc00;
+    margin-top: 0;
+    text-align: center;
+}
 
 /* HEADER */
 
@@ -86,6 +91,7 @@ header {
     top: 10px;
     right: 50px;
     background-color: #fecc00;
+    text-align: center;
 }
 
 
@@ -116,10 +122,6 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.right-side h2 {
-    text-align: center;
-}
-
 .categories li {
     list-style: none;
 }
@@ -136,6 +138,7 @@ header {
 
 .series h3 {
     display: inline-block;
+    margin-left: 10px;
 }
 
 .series .filter {
@@ -145,7 +148,7 @@ header {
 .each-serie {
     display: inline-block;
     text-align: center;
-    margin-right: 10px;
+    margin: 0 10px;
 }
 
 .pagination {
@@ -161,10 +164,6 @@ header {
 
 
 /* Common portions into connexion and inscription */
-
-.identification h1 {
-    text-align: center;
-}
 
 .identification p {
     margin-left: 40px;
@@ -225,11 +224,20 @@ header {
 
 /* End of connexion */
 
+/* Modification profil */
+
+.modification label{
+    font-weight: bold;
+}
+
+.avatar img{
+    margin-left: 40px;
+}
+
+/* End of modification profil */
+
 /* Forum */
 
-.forum h1{
-    text-align: center;
-}
 
 .header-list{
     list-style: none;

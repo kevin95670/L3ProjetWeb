@@ -8,8 +8,8 @@ $(document).ready(function() {
     //console.log(tailleFooter);
     var tailleMainContent = (tailleBody - 40) - (tailleHeader + tailleFooter);
     //console.log(tailleMainContent);
-    $('.main-content').css("height", tailleMainContent);
-    $('aside').css("height", tailleMainContent);
+    $('.main-content').css("min-height", tailleMainContent);
+    $('aside').css("min-height", tailleMainContent);
 
     $(window).on('resize', function() {
 
@@ -21,8 +21,8 @@ $(document).ready(function() {
         //console.log(tailleFooter);
         var tailleMainContent = (tailleBody - 40) - (tailleHeader + tailleFooter);
         //console.log(tailleMainContent);
-        $('.main-content').css("height", tailleMainContent);
-        $('aside').css("height", tailleMainContent);
+        $('.main-content').css("min-height", tailleMainContent);
+        $('aside').css("min-height", tailleMainContent);
     });
 
 });

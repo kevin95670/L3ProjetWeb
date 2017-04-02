@@ -1,3 +1,4 @@
+<?php session_start();?>
 <?php require("../../Projet/html/headerHTML.html"); ?>
 
     <?php if (!empty($_SESSION['connecte']))
@@ -12,7 +13,7 @@
 
         <div class="main-content">
             <div class="forum">
-                <h1>Forum</h1>
+                <h1 class="bg-yellow">Forum</h1>
                 <ul class="list-forum">
                     <li class="header-list">
                         <span class="subject">Sujet</span>

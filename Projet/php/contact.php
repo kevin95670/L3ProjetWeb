@@ -1,5 +1,15 @@
+<?php session_start();?>
 <?php require("../../Projet/html/headerHTML.html"); ?>
-		<?php require("headerDisconnected.php"); ?>
+		
+		<?php if (!empty($_SESSION['connecte']))
+		{
+			require("headerConnected.php");
+		}
+		else
+		{
+			require("headerDisconnected.php");
+		}
+		?>
 
 
 		<?php
@@ -14,7 +24,7 @@
 		?>
 
 		<div class="main-content">
-			<h1>Contactez-nous via ce formulaire</h1>
+			<h1 class="bg-yellow">Contactez-nous via ce formulaire</h1>
 			<form name="contact" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
 			<input type="email" name="emailContact" placeholder="Entrez votre adresse mail"><br/>
 			<textarea name="comment" rows="8" cols="50">Entrez votre demande</textarea><br/>

@@ -12,7 +12,7 @@
 		?>
 
             <div class="main-content">
-                <h2>yo</h2>
+                <h1 class="bg-yellow">yo</h1>
             </div>
 
             <?php require("right-side.php"); ?>

@@ -4,7 +4,7 @@
 
         <div class="main-content">
             <div class="inscription identification">
-                <h1>Inscrivez-vous !</h1>
+                <h1 class="bg-yellow">Inscrivez-vous !</h1>
                 <form method="post" action="inscrit.php">
                     <p>
                         <input type="text" name="nom" placeholder="Votre nom" maxlength="30" />

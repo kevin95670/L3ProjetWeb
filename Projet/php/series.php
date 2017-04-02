@@ -13,7 +13,7 @@
 
             <div class="main-content">
                 <div class="series">
-                    <h1>Vos séries</h1>
+                    <h1 class="bg-yellow">Vos séries</h1>
                     <h3>Classez vos séries par : </h3>
                     <form class="filter" action="series.php" method="get">
                         <select>

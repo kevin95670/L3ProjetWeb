@@ -31,7 +31,7 @@
         </nav>
         <div class="birthday">
             <h1>Joyeux anniversaire!</h1>
-            <a href="#"><img src="../../Projet/images/vampire.jpg" width="50" height="50" alt="birthday"/></a>
+            <a href="#"><img src="../../Projet/images/avatar.jpg" width="50" height="50" alt="birthday"/></a>
         </div>
 
     </header>

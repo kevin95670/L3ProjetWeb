@@ -4,7 +4,7 @@
 
         <div class="main-content">
             <div class="inscription identification">
-                <h1>Mes préférences</h1>
+                <h1 class="bg-yellow">Mes préférences</h1>
                 <form method="post" action="inscrit.php">
                     <p>
                         <label>Couleurs du site :</label>

@@ -2,7 +2,7 @@
     <?php require("headerDisconnected.php"); ?>
         <div class="main-content">
             <div class="connexion identification">
-                <h1>Connectez-vous </h1>
+                <h1 class="bg-yellow">Connectez-vous </h1>
                 <form method="post" action="traitement.php">
                     <p><i class="fa fa-user" aria-hidden="true"></i>
                         <input type="text" name="pseudo" placeholder="Votre pseudo" maxlength="30" />

@@ -1,7 +1,7 @@
 <?php require("../../Projet/html/headerHTML.html"); ?>
 
     <aside class="right-side">
-        <h2>Catégories</h2>
+        <h2 class="bg-yellow">Catégories</h2>
         <nav class="categories">
             <ul>
                 <li>

@@ -3,23 +3,34 @@
     <?php require("headerConnected.php"); ?>
 
         <div class="main-content">
-            <div class="inscription identification">
-                <h1>Modifiez votre profil</h1>
+            <div class="modification identification">
+                <h1 class="bg-yellow">Modifiez votre profil</h1>
                 <form method="post" action="inscrit.php">
-                    <p>
-                        <input type="text" name="nom" placeholder="Votre nom" maxlength="30" />
+                    <p class="avatar">
+                        <img src="../../Projet/images/avatar.jpg" width="60" height="60" alt="avatar">
                     </p>
                     <p>
-                        <input type="text" name="prenom" placeholder="Votre prénom" maxlength="30" />
+                        <input type="button" value="Sélectionner un fichier">
                     </p>
                     <p>
-                        <input type="text" name="pseudo" placeholder="Votre pseudo" maxlength="30" />
+                        <label>Ancien nom <i class="fa fa-long-arrow-right" aria-hidden="true"></i></label>
+                        <input type="text" name="nom" placeholder="Nouveau nom" maxlength="30" />
                     </p>
                     <p>
-                        <input type="password" name="mdp" placeholder="Votre mot de passe" maxlength="40" />
+                        <label>Ancien prénom <i class="fa fa-long-arrow-right" aria-hidden="true"></i></label>
+                        <input type="text" name="prenom" placeholder="Nouveau prénom" maxlength="30" />
                     </p>
                     <p>
-                        <input type="email" name="email" placeholder="Votre mail" maxlength="45" />
+                        <label>Ancien pseudo <i class="fa fa-long-arrow-right" aria-hidden="true"></i></label>
+                        <input type="text" name="pseudo" placeholder="Nouveau pseudo" maxlength="30" />
+                    </p>
+                    <p>
+                        <label>Ancien mot de passe <i class="fa fa-long-arrow-right" aria-hidden="true"></i></label>
+                        <input type="password" name="mdp" placeholder="Nouveau mot de passe" maxlength="40" />
+                    </p>
+                    <p>
+                        <label>Ancien mail <i class="fa fa-long-arrow-right" aria-hidden="true"></i></label>
+                        <input type="email" name="email" placeholder="Nouveau mail" maxlength="45" />
                     </p>
                     <p>
                         <label>Votre sexe :</label>
