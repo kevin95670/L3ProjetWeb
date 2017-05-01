@@ -99,17 +99,24 @@ header {
 
 /* Home */
 
-.diaporama{
-    text-align: center;
+#diaporama{
     position: relative;
+    overflow: hidden;
     margin-bottom: 20px;
+    width: 900px;
+    height: 500px;
 }
 
-.diaporama img{
-    max-width: 100%;
+#diapo-img{
+    width: 10000px;
+    position: relative; 
+    /* Eviter les petits espaces entre les images */
+    font-size: 0;
+    /* initialisation à 0 (défaut "auto") : nécessaire sur Chrome */
+    left: 0;
 }
 
-.legend{
+#legend{
     position: absolute;
     top: 0;
     left: 0;
@@ -118,14 +125,50 @@ header {
     padding: 20px 0;
 }
 
-.legend a {
+#legend a {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    margin-left: 10px;
 }
 
-.legend a:hover {
+#legend a:hover {
     color: white;
+}
+
+/* Commun aux deux flêches */
+#diapo-fleches span
+{
+    position: absolute;
+    top: 200px;
+    font-size: 30px;
+    font-family: sans;
+    background-color: rgba(0,0,0,.4);
+    color: #bbb;
+    padding: .1em;
+    /* Le pointeur de la souris */
+    cursor: pointer;
+}
+#diapo-gauche
+{
+    left: 0;    
+}
+#diapo-droite
+{
+    right: 0;
+}
+
+#diapo-fleches span:hover
+{
+    color: #fff;    
+}
+
+.serie-coeur{
+    text-align: center;
+}
+
+.resume-coeur p{
+    margin-left: 10px;
 }
 
 /* End of home */

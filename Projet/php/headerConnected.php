@@ -13,7 +13,7 @@
         <nav class="header-menu">
             <ul>
                 <li>
-                    <a href="home.php">Acceuil</a>
+                    <a href="home.php">Accueil</a>
                 </li>
                 <li>
                     <a href="series.php">Séries</a>

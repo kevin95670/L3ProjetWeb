@@ -8,8 +8,13 @@ $(document).ready(function() {
     //console.log(tailleFooter);
     var tailleMainContent = (tailleBody - 40) - (tailleHeader + tailleFooter);
     //console.log(tailleMainContent);
+
+    var widthDiapo = $('.main-content').width();
+
     $('.main-content').css("min-height", tailleMainContent);
     $('aside').css("min-height", tailleMainContent);
+    $('#diaporama').css("width", widthDiapo);
+    $('#diaporama img').css("width", widthDiapo);
 
     $(window).on('resize', function() {
 
@@ -21,8 +26,13 @@ $(document).ready(function() {
         //console.log(tailleFooter);
         var tailleMainContent = (tailleBody - 40) - (tailleHeader + tailleFooter);
         //console.log(tailleMainContent);
+
+        var widthDiapo = $('.main-content').width();
+
         $('.main-content').css("min-height", tailleMainContent);
         $('aside').css("min-height", tailleMainContent);
+        $('#diaporama').css("width", widthDiapo);
+        $('#diaporama img').css("width", widthDiapo);
     });
 
     $('.choice-color').on('change', function() {
@@ -62,5 +72,29 @@ $(document).ready(function() {
             $('.font').css('font-family', 'FreeMono');
 
     });
+
+    var minuteur=setInterval(function()
+        {
+            var position=parseInt($('#diapo-img').css('left'));
+            if(position%widthDiapo!==0){return;}
+            position-=widthDiapo;
+            if(position<-widthDiapo*3){position=0;}
+            $('#diapo-img').animate({left: position});       
+        },2000);
+
+    $('#diapo-fleches span').mousedown(function()
+        {
+            if(minuteur!==false)
+            {
+                clearInterval(minuteur);
+                minuteur=false;
+            }
+            var position=parseInt($('#diapo-img').css('left'));
+            if(position%widthDiapo!==0){return;}
+            var flecheDroite=$(this).attr('id')==='diapo-droite';
+            position+=(flecheDroite ? -widthDiapo : widthDiapo);
+            if(position<-widthDiapo*3 || position>0){return;}
+            $('#diapo-img').animate({left: position});
+        });
 
 });
