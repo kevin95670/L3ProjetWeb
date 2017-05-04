@@ -19,13 +19,14 @@ else
        <img src="../../Projet/images/vampire.jpg" alt="diaporama"/>
        <img src="../../Projet/images/vampire.jpg" alt="diaporama"/>
        <img src="../../Projet/images/vampire.jpg" alt="diaporama"/>
+       <img src="../../Projet/images/vampire.jpg" alt="diaporama"/>
    </div>
        <div id="legend">
         <a href="#">Legende</a>
     </div>
     <div id="diapo-fleches">
-        <span id="diapo-gauche">&lt;</span>
-        <span id="diapo-droite">&gt;</span>
+        <span id="diapo-gauche"><i class="fa fa-arrow-left" aria-hidden="true"></i></span>
+        <span id="diapo-droite"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
     </div>
    </div>
    <div class="coeur">

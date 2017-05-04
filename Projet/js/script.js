@@ -1,5 +1,6 @@
 $(document).ready(function() {
-	
+
+
     var tailleBody = $('body').height();
     //console.log(tailleBody);
     var tailleHeader = $('header').height();
@@ -73,28 +74,118 @@ $(document).ready(function() {
 
     });
 
-    var minuteur=setInterval(function()
-        {
-            var position=parseInt($('#diapo-img').css('left'));
-            if(position%widthDiapo!==0){return;}
-            position-=widthDiapo;
-            if(position<-widthDiapo*3){position=0;}
-            $('#diapo-img').animate({left: position});       
-        },2000);
 
-    $('#diapo-fleches span').mousedown(function()
+
+    $('#pseudo').change(function(event)
+    {
+        $.post('http://localhost/Projet/php/inscrit.php',
+          {pseudo : $('#pseudo').val(),
+          //mail : $('#mail').val(),
+          mdp : $('#motPasse').val(),
+          confirm : $('#confirm').val(),
+          genre : $('input[name=genre]:checked').val()
+      },
+      function(reponse)
+      {
+        if(reponse == "existant"){
+            $('#erreur-pseudo').text("Pseudo existant ! ");
+            $('#erreur-pseudo').css('color','#fecc00');
+            $('#erreur-pseudo').css('font-weight', 'bold');
+            $('#erreur-pseudo').show();
+        }
+        else{
+            $('#erreur-pseudo').hide();
+        }
+    });
+
+    });
+
+    $('.modification #newPseudo').change(function(event)
+    {
+        $.post('http://localhost/Projet/php/update.php',
+          {pseudo : $('.modification #newPseudo').val(),
+          //mail : $('#mail').val(),
+          old : $('.modification #old').val(),
+          new : $('.modification #new').val(),
+          newConfirm : $('.modification #newConfirm').val(),
+          genre : $('.modification input[name=genre]:checked').val()
+      },
+      function(reponse)
+      {
+        console.log(reponse);
+        if(reponse == "existant"){
+            $('#erreur-pseudo').text("Pseudo existant ! ");
+            $('#erreur-pseudo').css('color','#fecc00');
+            $('#erreur-pseudo').css('font-weight', 'bold');
+            $('#erreur-pseudo').show();
+        }
+        else{
+            $('#erreur-pseudo').hide();
+        }
+    });
+
+    });
+
+    $('#confirm').keyup(function(event)
+    {
+        var mdp = $("#motPasse").val();
+        var confirme=$("#confirm").val();
+        if(mdp != confirme)
         {
-            if(minuteur!==false)
-            {
-                clearInterval(minuteur);
-                minuteur=false;
-            }
-            var position=parseInt($('#diapo-img').css('left'));
-            if(position%widthDiapo!==0){return;}
-            var flecheDroite=$(this).attr('id')==='diapo-droite';
-            position+=(flecheDroite ? -widthDiapo : widthDiapo);
-            if(position<-widthDiapo*3 || position>0){return;}
-            $('#diapo-img').animate({left: position});
-        });
+            $('#erreur-mdp').text("Mot de passe different ! ");
+            $('#erreur-mdp').css('color','#fecc00');
+            $('#erreur-mdp').css('font-weight', 'bold');
+            $('#erreur-mdp').show();
+        }
+        else
+        {
+            $('#erreur-mdp').hide();
+        }
+
+    });
+
+  /*  $('#mail').keyup(function(event)
+    {
+        var mail = $("#mail").val();
+        if(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(mail))
+        {
+            $('#erreur-mail').hide();
+
+        }
+        else
+        {
+            $('#erreur-mail').text("Format de mail non valide ! ");
+            $('#erreur-mail').css('color','#fecc00');
+            $('#erreur-mail').css('font-weight', 'bold');
+            $('#erreur-mail').show();
+        }
+
+    });*/
+
+var minuteur=setInterval(function()
+{
+    var position=parseInt($('#diapo-img').css('left'));
+    if(position%widthDiapo!==0){return;}
+    position-=widthDiapo;
+    if(position<-widthDiapo*4){position=0;}
+    $('#diapo-img').animate({left: position});       
+},5000);
+
+$('#diapo-fleches span').mousedown(function()
+{
+    if(minuteur!==false)
+    {
+        clearInterval(minuteur);
+        minuteur=false;
+    }
+    var position=parseInt($('#diapo-img').css('left'));
+    if(position%widthDiapo!==0){return;}
+    var flecheDroite=$(this).attr('id')==='diapo-droite';
+    position+=(flecheDroite ? -widthDiapo : widthDiapo);
+    if(position<-widthDiapo*4 || position>0){return;}
+    $('#diapo-img').animate({left: position});
+});
+
+
 
 });

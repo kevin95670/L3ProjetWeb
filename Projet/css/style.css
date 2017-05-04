@@ -110,9 +110,7 @@ header {
 #diapo-img{
     width: 10000px;
     position: relative; 
-    /* Eviter les petits espaces entre les images */
     font-size: 0;
-    /* initialisation à 0 (défaut "auto") : nécessaire sur Chrome */
     left: 0;
 }
 
@@ -136,26 +134,24 @@ header {
     color: white;
 }
 
-/* Commun aux deux flêches */
 #diapo-fleches span
 {
     position: absolute;
     top: 200px;
-    font-size: 30px;
-    font-family: sans;
+    font-size: 20px;
     background-color: rgba(0,0,0,.4);
     color: #bbb;
-    padding: .1em;
-    /* Le pointeur de la souris */
+    padding: 12px 15px;
+    border-radius: 30px;
     cursor: pointer;
 }
 #diapo-gauche
 {
-    left: 0;    
+    left: 10px; 
 }
 #diapo-droite
 {
-    right: 0;
+    right: 10px;
 }
 
 #diapo-fleches span:hover
